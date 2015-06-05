@@ -57,5 +57,45 @@
     </nav>
 
     <%= yield %>
+
+    <!-- Footer -->
+  <div id="footer">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="list-inline" id="text-align-right">
+          <li>
+            <% link_to "http://www.lequipe.fr" do %>
+              <i class="fa fa-youtube-square"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to "http://www.lefigaro.fr" do %>
+              <i class="fa fa-instagram"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to "http://www.lemonde.fr" do %>
+              <i class="fa fa-facebook-square"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to "http://www.liberation.fr" do %>
+              <i class="fa fa-twitter-square"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-8">
+        <p id="text-align-right">
+          Stylus is a fictive product by LeWagon.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
   </body>
 </html>

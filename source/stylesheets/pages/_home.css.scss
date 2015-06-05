@@ -1,0 +1,62 @@
+@import url("banner.css");
+@import url("footer.css");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #141414;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.padded {
+  padding: 100px 50px;
+  background-color: #469AE0;
+}
+
+.bg-form {
+  background-color: #A2DED0;
+}
+.card {
+  padding: 30px 10px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: white;
+  height: 300px;
+  vertical-align: middle;
+  box-shadow: 10px 10px 5px #BCAF56;
+}
+
+#ul-bg-gradient {
+  background: -webkit-linear-gradient(90deg, #F09819 10%, #EDDE5D 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #F09819 10%, #EDDE5D 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #F09819 10%, #EDDE5D 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #F09819 10%, #EDDE5D 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #F09819 10%, #EDDE5D 90%); /* W3C */
+}
+
+.icon {
+  height: 110px;
+  vertical-align: middle;
+}
+
+#padded-icon {
+  padding-top: 20px;
+}
+
+.card h2 {
+  font-size: 25px;
+}
+
+/* code your banner design here */
+#banner {
+  background-image: image-url('background.jpg');
+  height: 800px;
+  color: white;
+  padding: 390px 180px;
+
+}
+
+.padded-btn {
+  padding: 25px 0px;
+}
