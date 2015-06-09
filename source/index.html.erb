@@ -3,14 +3,18 @@ title: Le Wagon Middleman boilerplate
 ---
 
   <!-- Banner -->
-  <div id="banner">
-    <h1>Styl.us</h1>
-    <p>
-      Turn your pen into your best friend. Make every line your make count.
-    </p>
-    <div class="padded-btn">
-      <div class="btn btn-primary btn-lg">GET YOUR STYLUS</div>
+  <div id="banner" class="window-height">
+    <div id="padded-text">
+      <h1>Styl.us</h1>
+      <p>
+        Turn your pen into your best friend. Make every line your make count.
+      </p>
+      <div class="padded-btn">
+        <div class="btn btn-primary btn-lg animation-target">GET YOUR STYLUS</div>
+      </div>
     </div>
+
+
   </div>
 
   <div class="padded" id="ul-bg">
@@ -18,7 +22,7 @@ title: Le Wagon Middleman boilerplate
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="icon">
+            <div class="icon" data-sr>
             <%= image_tag "mariage2.png", alt: "Mariage picture", id: "padded-icon" %>
             </div>
             <h2>Build a family</h2>
@@ -30,7 +34,7 @@ title: Le Wagon Middleman boilerplate
 
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="icon">
+            <div class="icon" data-sr>
               <%= image_tag "drink2.png", alt: "Drinking picture", id: "padded-icon" %>
             </div>
             <h2>See friends</h2>
@@ -41,7 +45,7 @@ title: Le Wagon Middleman boilerplate
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="icon">
+            <div class="icon" data-sr>
               <%= image_tag "travel2.png", alt: "Travel picture", id: "padded-icon" %>
             </div>
             <h2>Travel far</h2>
@@ -53,7 +57,7 @@ title: Le Wagon Middleman boilerplate
 
         <div class="col-xs-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="icon">
+            <div class="icon" data-sr>
               <%= image_tag "sleep2.png", alt: "Sleep picture", id: "padded-icon" %>
             </div>
             <h2>Rest a bit</h2>
@@ -69,7 +73,7 @@ title: Le Wagon Middleman boilerplate
 
   <!-- Form -->
 
-  <div class="text-center padded bg-form">
+  <div class="text-center padded bg-form" id="get-news">
     <h2>Get news from us</h2>
     <p>Not so frequent but very captivating email recaps!</p>
     <form action="#" class="form-inline">
@@ -81,6 +85,11 @@ title: Le Wagon Middleman boilerplate
 
   </div>
 
+   <script>
+
+      window.sr = new scrollReveal();
+
+  </script>
 
   <!-- Map -->
   <div id="map" style="width: 100%; height: 400px;"></div>
@@ -104,6 +113,10 @@ title: Le Wagon Middleman boilerplate
     map: map,
     title: "You are here!"
   });
+
   </script>
+
+
+
 
 

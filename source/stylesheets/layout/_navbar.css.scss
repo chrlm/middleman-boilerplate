@@ -2,7 +2,7 @@
  * Colors & Fonts
  * ------------------------------------- */
 $navbar-color: black;
-$navbar-hover-color: $yellow;
+$navbar-hover-color: $blue;
 $navbar-font-family: $header-font;
 $navbar-bg: $gray-lighter;
 
@@ -18,7 +18,7 @@ $navbar-border-bottom-color: grey;
 /* -------------------------------------
  * Navbar button
  * ------------------------------------- */
-$navbar-btn-height: 40px;
+$navbar-btn-height: 20px;
 $navbar-btn-bg: lightgrey;
 $navbar-btn-color: white;
 $navbar-btn-horizontal-padding: 10px;
@@ -60,6 +60,8 @@ $navbar-profile-border-width: 2px;
         -ms-transition: all 0.3s ease;
             transition: all 0.3s ease;
   }
+
+
 
   .navbar-nav > li > a:hover,
   .navbar-nav > .open > a:hover {

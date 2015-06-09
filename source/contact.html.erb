@@ -1,21 +1,42 @@
-<div class="container">
+<div>
   <br>
   <br>
   <br>
-
-  <ul class="list-inline text-center">
-    <li>
-      <h2>Boss n°1</h2>
-      <%= image_tag "http://placehold.it/150x150", class: "img-circle" %>
-    </li>
-    <li>
-      <h2>Boss n°2</h2>
-      <%= image_tag "http://placehold.it/150x150", class: "img-circle" %>
-    </li>
-    <li>
-      <h2>Boss n°3</h2>
-      <%= image_tag "http://placehold.it/150x150", class: "img-circle" %>
-    </li>
-
-  </ul>
+  <br>
+  <h2 class="text-center">Our whole staff says hello!</h1>
+  <div>
+    <% data.staff.each_with_index do |member, index| %>
+      <% if index.even? %>
+        <div class="row even-row">
+          <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+            <%= image_tag member.image, class: "img-circle img-responsive" %>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-8 text-center">
+            <h2>
+              <%= member.name %> <br>
+            </h2>
+            <h3>
+              <%= member.position %> <br>
+              <%= member.background %> <br>
+            </h3>
+          </div>
+        </div>
+      <% else %>
+        <div class="row uneven-row">
+          <div class="col-xs-12 col-sm-6 col-md-8 text-center">
+            <h2>
+              <%= member.name %> <br>
+            </h2>
+            <h3>
+              <%= member.position %> <br>
+              <%= member.background %> <br>
+            </h3>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+            <%= image_tag member.image, class: "img-circle img-responsive" %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>
